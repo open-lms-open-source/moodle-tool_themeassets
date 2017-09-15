@@ -27,6 +27,8 @@ namespace tool_themeassets\form;
 
 defined('MOODLE_INTERNAL') || die();
 
+require_once(__DIR__ . '/../../../../../lib/formslib.php');
+
 /**
  * Assets form definition.
  *

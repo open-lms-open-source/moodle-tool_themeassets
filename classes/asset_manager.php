@@ -60,12 +60,10 @@ class asset_manager {
         $files = $this->fs->get_area_files(\context_system::instance()->id, 'tool_themeassets',
                 'assets', false, '', false);
         foreach ($files as $file) {
-            $filepath = $file->get_filepath();
-
             $assets[] = (object) [
                 'name' => $file->get_filename(),
                 'href' => \moodle_url::make_pluginfile_url($file->get_contextid(), $file->get_component(),
-                        $file->get_filearea(), $file->get_itemid(), $filepath, $file->get_filename()),
+                        $file->get_filearea(), $file->get_itemid(), $file->get_filepath(), $file->get_filename()),
                 'type' => $file->get_mimetype(),
             ];
         }

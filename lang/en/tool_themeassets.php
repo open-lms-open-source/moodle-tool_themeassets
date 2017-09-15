@@ -15,12 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This is a one-line short description of the file.
+ * Lang strings for Theme assets plugin
  *
- * You can have a rather longer description of the file as well,
- * if you like, and it can span multiple lines.
- *
- * @package    mod_mymodule
+ * @package    tool_themeassets
  * @author     Sam Chaffee
  * @copyright  Copyright (c) 2017 Blackboard Inc. (http://www.blackboard.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later

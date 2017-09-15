@@ -42,13 +42,11 @@
     <div class="row">
         <div class="col-md-4">{{# str }} name, tool_themeassets {{/ str }}</div>
         <div class="col-md-8">{{# str }} url, tool_themeassets {{/ str }}</div>
-
     </div>
     {{#assets}}
         <div class="row tool_themeassets-asset">
             <div class="col-md-4 asset-name"><a href="{{href}}">{{name}}</a></div>
             <div class="col-md-8 asset-link">{{href}}</div>
-
         </div>
     {{/assets}}
     {{^assets}}

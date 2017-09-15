@@ -19,7 +19,7 @@
 # @copyright Copyright (c) 2017 Blackboard Inc. (http://www.blackboard.com)
 # @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 
-@tool @tool_themeassets
+@tool @tool_themeassets @_file_upload @javascript
 Feature: Upload assets for use in theme customization.
   In order to support theme customization
   As an administrator
@@ -29,8 +29,8 @@ Feature: Upload assets for use in theme customization.
     Given I log in as "admin"
     And I am on site homepage
     And I navigate to "Theme assets" node in "Site administration > Appearance"
+    And I should see "No assets"
 
-  @javascript
   Scenario: Upload a CSS file
     Given I upload "admin/tool/themeassets/tests/fixtures/test.css" file to "Assets" filemanager
     And I press "Save"
@@ -38,7 +38,6 @@ Feature: Upload assets for use in theme customization.
     And I should not see "No assets"
     And I should see "test.css" in the "#tool_themeassets-assets .asset-name" "css_element"
 
-  @javascript
   Scenario: Upload an image
     Given I upload "admin/tool/themeassets/tests/fixtures/test.jpg" file to "Assets" filemanager
     And I press "Save"
@@ -46,12 +45,9 @@ Feature: Upload assets for use in theme customization.
     And I should not see "No assets"
     And I should see "test.jpg" in the "#tool_themeassets-assets .asset-name" "css_element"
 
-  @javascript
   Scenario: Upload a JavaScript file
     Given I upload "admin/tool/themeassets/tests/fixtures/test.js" file to "Assets" filemanager
     And I press "Save"
     Then I should see "Assets updated"
     And I should not see "No assets"
     And I should see "test.js" in the "#tool_themeassets-assets .asset-name" "css_element"
-
-
