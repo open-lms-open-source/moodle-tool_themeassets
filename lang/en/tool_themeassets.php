@@ -29,3 +29,4 @@ $string['name'] = 'File name';
 $string['noassets'] = 'No assets';
 $string['uploadsuccess'] = 'Assets updated';
 $string['url'] = 'URL';
+$string['privacy:metadata'] = 'The Theme assets plugin does not store any personal data.';
