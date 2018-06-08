@@ -42,11 +42,19 @@ class assets_form extends \moodleform {
      * @return array
      */
     public static function get_options() {
+        global $CFG;
+
+        $acceptedtypes = [
+            'web_file',
+            'web_image'
+        ];
+
+        if (!empty($CFG->tool_themeassets_accepted_types)) {
+            $acceptedtypes = $CFG->tool_themeassets_accepted_types;
+        }
+
         return [
-            'accepted_types' => [
-                'web_file',
-                'web_image'
-            ],
+            'accepted_types' => $acceptedtypes,
             'subdirs' => true,
         ];
     }
