@@ -50,7 +50,14 @@ class assets_form extends \moodleform {
         ];
 
         if (!empty($CFG->tool_themeassets_accepted_types)) {
-            $acceptedtypes = $CFG->tool_themeassets_accepted_types;
+            $types = $CFG->tool_themeassets_accepted_types;
+            if (($key = array_search('*', $types)) !== false) {
+                unset($types[$key]);
+            }
+
+            if (!empty($types)) {
+                $acceptedtypes = $types;
+            }
         }
 
         return [
