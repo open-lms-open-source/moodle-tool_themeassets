@@ -28,7 +28,7 @@ Feature: Upload assets for use in theme customization.
   Background:
     Given I log in as "admin"
     And I am on site homepage
-    And I navigate to "Theme assets" node in "Site administration > Appearance"
+    When I navigate to "Appearance > Theme assets" in site administration
     And I should see "No assets"
 
   Scenario: Upload a CSS file
