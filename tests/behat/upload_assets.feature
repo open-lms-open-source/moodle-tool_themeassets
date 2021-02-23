@@ -16,7 +16,7 @@
 # Theme assets upload assets feature
 #
 # @package   tool_themeassets
-# @copyright Copyright (c) 2017 Blackboard Inc. (http://www.blackboard.com)
+# @copyright Copyright (c) 2017 Open LMS (https://www.openlms.net)
 # @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 
 @tool @tool_themeassets @_file_upload @javascript
