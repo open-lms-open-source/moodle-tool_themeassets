@@ -21,9 +21,7 @@
  * @copyright Copyright (c) 2018 Open LMS (https://www.openlms.net)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-defined('MOODLE_INTERNAL') || die();
-
+namespace tool_themeassets;
 use tool_themeassets\form\assets_form;
 
 /**
@@ -33,7 +31,7 @@ use tool_themeassets\form\assets_form;
  * @copyright Copyright (c) 2018 Open LMS (https://www.openlms.net)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class tool_themeassets_options_testcase extends advanced_testcase {
+class options_test extends \advanced_testcase {
     /**
      * Test that overriding accepted types omits wildcard file type usage.
      */

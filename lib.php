@@ -22,7 +22,6 @@
  * @copyright  Copyright (c) 2017 Open LMS (https://www.openlms.net)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-defined('MOODLE_INTERNAL') || die();
 
 function tool_themeassets_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, $options = []) {
     if (!$context instanceof \context_system) {

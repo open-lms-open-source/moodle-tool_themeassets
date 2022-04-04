@@ -25,8 +25,6 @@
 
 namespace tool_themeassets;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Asset manager class definition.
  *

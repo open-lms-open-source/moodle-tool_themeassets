@@ -24,8 +24,6 @@
 
 namespace tool_themeassets\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Privacy Subsystem for tool_themeassets implementing null_provider.
  *
