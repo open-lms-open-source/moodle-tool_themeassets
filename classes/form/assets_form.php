@@ -46,7 +46,7 @@ class assets_form extends \moodleform {
 
         $acceptedtypes = [
             'web_file',
-            'web_image'
+            'web_image',
         ];
 
         if (!empty($CFG->tool_themeassets_accepted_types)) {

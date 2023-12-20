@@ -43,7 +43,7 @@ class options_test extends \advanced_testcase {
         $defaultopts = [
             'accepted_types' => [
                 'web_file',
-                'web_image'
+                'web_image',
             ],
             'subdirs' => true,
         ];
@@ -52,7 +52,7 @@ class options_test extends \advanced_testcase {
         $this->assertEquals($defaultopts, $options);
 
         $CFG->tool_themeassets_accepted_types = [
-            '*'
+            '*',
         ];
 
         $options = assets_form::get_options();
