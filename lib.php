@@ -37,7 +37,8 @@ function tool_themeassets_pluginfile($course, $cm, $context, $filearea, $args, $
     $fullpath = "/{$context->id}/tool_themeassets/$filearea/$itemid/$relativepath";
 
     $fs = get_file_storage();
-    if (!$file = $fs->get_file_by_hash(sha1($fullpath)) || $file->is_directory()) {
+    $file = $fs->get_file_by_hash(sha1($fullpath));
+    if (!$file || $file->is_directory()) {
         return false;
     }
 
