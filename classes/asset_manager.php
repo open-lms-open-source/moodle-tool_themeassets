@@ -51,7 +51,9 @@ class asset_manager {
     }
 
     /**
-     * @return array
+     * Retrieves a list of assets.
+     *
+     * @return array List of asset objects with name, href, and type.
      */
     public function get_assets() {
         $assets = [];
