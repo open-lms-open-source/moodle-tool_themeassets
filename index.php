@@ -50,7 +50,7 @@ if ($data = $mform->get_data()) {
 
     file_save_draft_area_files($data->assets, $filecontext->id, $component, $filearea, 0, $options);
     notification::add(get_string('uploadsuccess', 'tool_themeassets'), notification::SUCCESS);
-    redirect(new moodle_url('/admin/tool/themeassets/index.php'));
+    redirect(new \core\url('/admin/tool/themeassets/index.php'));
 }
 
 echo $OUTPUT->header();

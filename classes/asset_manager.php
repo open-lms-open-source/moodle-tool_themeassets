@@ -60,7 +60,7 @@ class asset_manager {
         foreach ($files as $file) {
             $assets[] = (object) [
                 'name' => $file->get_filename(),
-                'href' => \moodle_url::make_pluginfile_url($file->get_contextid(), $file->get_component(),
+                'href' => \core\url::make_pluginfile_url($file->get_contextid(), $file->get_component(),
                         $file->get_filearea(), $file->get_itemid(), $file->get_filepath(), $file->get_filename()),
                 'type' => $file->get_mimetype(),
             ];

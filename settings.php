@@ -30,7 +30,7 @@ defined('MOODLE_INTERNAL') || die();
 $temp = new admin_externalpage(
     'toolthemeassets',
     new lang_string('pluginname', 'tool_themeassets'),
-    new moodle_url('/admin/tool/themeassets/index.php')
+    new \core\url('/admin/tool/themeassets/index.php')
 );
 
 $ADMIN->add('appearance', $temp);
