@@ -29,7 +29,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $temp = new admin_externalpage(
     'toolthemeassets',
-    new lang_string('pluginname', 'tool_themeassets'),
+    new \core\lang_string('pluginname', 'tool_themeassets'),
     new \core\url('/admin/tool/themeassets/index.php')
 );
 
