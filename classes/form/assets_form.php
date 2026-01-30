@@ -39,7 +39,9 @@ require_once(__DIR__ . '/../../../../../lib/formslib.php');
 class assets_form extends \moodleform {
 
     /**
-     * @return array
+     * Retrieves options for the file manager element.
+     *
+     * @return array Array of options for the file manager, including accepted types and subdir settings.
      */
     public static function get_options() {
         global $CFG;
@@ -65,7 +67,9 @@ class assets_form extends \moodleform {
             'subdirs' => true,
         ];
     }
-
+    /**
+     * Defines the form elements.
+     */
     public function definition() {
         $mform = $this->_form;
 

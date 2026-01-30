@@ -23,6 +23,18 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+/**
+ * Handles serving of files for the Theme assets tool.
+ *
+ * @param stdClass $course The course object.
+ * @param stdClass $cm Course module.
+ * @param context $context Context object.
+ * @param string $filearea The file area.
+ * @param array $args Additional arguments.
+ * @param bool $forcedownload Whether or not force download.
+ * @param array $options Additional options affecting file serving.
+ * @return bool False if the file not found or context is incorrect.
+ */
 function tool_themeassets_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, $options = []) {
     if (!$context instanceof \context_system) {
         return false;

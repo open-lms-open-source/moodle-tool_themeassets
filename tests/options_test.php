@@ -34,6 +34,8 @@ use tool_themeassets\form\assets_form;
 class options_test extends \advanced_testcase {
     /**
      * Test that overriding accepted types omits wildcard file type usage.
+     *
+     * @covers ::test_options_omit_asterisk
      */
     public function test_options_omit_asterisk() {
         global $CFG;
